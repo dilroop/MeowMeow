@@ -9,6 +9,10 @@ import javax.inject.Inject
 internal class CatsRepository @Inject constructor(
     private val catApi: TheCatApi
 ) {
+    companion object {
+        private const val DEFAULT_LIMIT = 20
+    }
+
     suspend fun getCats(
         apiRequestFilters: List<ApiRequestFilter>,
         apiResultFilters: List<ApiResultFilter>
@@ -19,7 +23,7 @@ internal class CatsRepository @Inject constructor(
         }
         val results = try {
              catApi.getRandomCats(
-                limit = 9,
+                limit = DEFAULT_LIMIT,
                 size = filterProperties.size,
                 mimeTypes = filterProperties.mimeType?.value,
                 categoryIds = filterProperties.categories
