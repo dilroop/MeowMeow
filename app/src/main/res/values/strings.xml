@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Meow Meow</string>
+    <string name="cat_screen_item_count">%d Results</string>
+    <string name="cat_screen_image_type">Image Type</string>
+    <string name="cat_screen_image_type_animated">Animated</string>
+    <string name="cat_screen_image_type_static">Static</string>
+    <string name="cat_screen_filter_no_hats">No Hats</string>
+    <string name="cat_screen_filter_only_hats">Only Hats</string>
+    <string name="cat_screen_filter_zero_results_title">Check the filters again</string>
+    <string name="cat_screen_filter_zero_results_message">It could be the internet or want hats but don\'t want hats </string>
 </resources>
