@@ -97,7 +97,7 @@ internal fun AmazingCatFilters(viewModel: HomeViewModel) {
     Row(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.horizontalScroll(state = scrollState)
+        modifier = Modifier.horizontalScroll(state = scrollState).padding(16.dp)
     ) {
         Icon(Icons.Filled.Tune, "Filters")
         FilterChip(
