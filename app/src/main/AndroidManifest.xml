@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dsb.meowmeow">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".MeowApplication"
         android:allowBackup="true"
